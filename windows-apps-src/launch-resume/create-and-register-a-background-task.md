@@ -110,7 +110,7 @@ The following steps show you how to write a new class that implements the [**IBa
     >     BackgroundTaskDeferral _deferral; // Note: defined at class scope so we can mark it complete inside the OnCancel() callback if we choose to support cancellation
     >     public async void Run(IBackgroundTaskInstance taskInstance)
     >     {
-    >         _deferral = taskInstance.GetDeferral()
+    >         _deferral = taskInstance.GetDeferral();
     >         //
     >         // TODO: Insert code to start one or more asynchronous methods using the
     >         //       await keyword, for example:
